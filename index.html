@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARC L1 Payments | UAE → Global</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <img src="arc-logo.svg" alt="ARC logo" class="brand-logo" />
+          <div>
+            <p class="brand-name">ARC L1</p>
+            <p class="brand-subtitle">UAE → Global payments</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#cases">Cases</a>
+          <a href="#onchain">Onchain</a>
+          <a href="#rails">Rails</a>
+        </nav>
+        <button id="connect-wallet-nav" class="nav-button">Connect Wallet</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">ARC L1 Payments</p>
+            <h1>Cross-border payments reimagined for UAE to global settlement.</h1>
+            <p class="hero-text">A polished prototype for transparent AED pay-ins, USDC settlement, stablecoin routing, and ARC L1 wallet interaction with live transaction capability.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#cases">View use cases</a>
+              <button class="button button-secondary" id="hero-connect">Connect wallet</button>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <div class="panel-header">
+              <span>Live settlement preview</span>
+              <strong>USDC rails + ARC L1</strong>
+            </div>
+            <div class="hero-stat-grid">
+              <div class="stat-card">
+                <span>1,000 AED</span>
+                <p>Sender amount</p>
+              </div>
+              <div class="stat-card">
+                <span>264.5 USDC</span>
+                <p>Recipient receives</p>
+              </div>
+              <div class="stat-card">
+                <span>1.5%</span>
+                <p>Transparent fee</p>
+              </div>
+            </div>
+            <div class="panel-note">Built around Circle rails, CCTP-ready transfers, and live ARC L1 wallet transactions for a modern settlement prototype.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cases" class="section section-cases">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow">Use cases</p>
+            <h2>High-impact payment flows for UAE-origin settlement.</h2>
+          </div>
+        </div>
+        <div class="case-grid">
+          <button class="case-card active" data-case="remittance">
+            <p class="case-pill">Remittance</p>
+            <h3>Transparent fees + confirmation</h3>
+            <p>Ideal for UAE senders moving value across borders with settlement certainty.</p>
+          </button>
+          <button class="case-card" data-case="marketplace">
+            <p class="case-pill">Marketplace</p>
+            <h3>Global creator payouts</h3>
+            <p>UAE platforms can settle sellers and creators globally with USDC rails.</p>
+          </button>
+          <button class="case-card" data-case="payroll">
+            <p class="case-pill">Payroll</p>
+            <h3>Stablecoin contractor payroll</h3>
+            <p>Batch payments with receipts, stable internal accounting, and easy reconciliation.</p>
+          </button>
+          <button class="case-card" data-case="merchant">
+            <p class="case-pill">Merchant</p>
+            <h3>AED pay-in, USDC settlement</h3>
+            <p>Merchant collection in AED, settlement in USDC for global suppliers and partners.</p>
+          </button>
+        </div>
+
+        <div class="flow-panel">
+          <div class="flow-body">
+            <h3 id="case-title">Remittance with clear fees</h3>
+            <p id="case-description">A sender in the UAE initiates a transfer in AED, views a fully transparent fee breakdown, and receives settlement confirmation once USDC rails begin finalizing the payout.</p>
+            <div class="flow-details">
+              <div><strong>Input:</strong><span>AED 1,000 pay-in via local bank transfer or card.</span></div>
+              <div><strong>Settles as:</strong><span>USDC to recipient wallet or local delivery partner.</span></div>
+              <div><strong>Tools:</strong><span>Circle Gateway, Circle Wallets, USDC, CCTP.</span></div>
+            </div>
+          </div>
+          <div class="flow-preview">
+            <div class="quote-card">
+              <div class="quote-row"><span>Send</span><strong>AED 1,000</strong></div>
+              <div class="quote-row"><span>FX Rate</span><strong>1 AED = 0.27 USDC</strong></div>
+              <div class="quote-row"><span>Fee</span><strong>AED 15 (1.5%)</strong></div>
+              <div class="quote-row total"><span>Recipient receives</span><strong>USDC 264.5</strong></div>
+              <p class="quote-note">Settlement confirmed in real time when funds reach the USDC channel.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="rails" class="section section-rails">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow">Rails</p>
+            <h2>Built on Circle & ARC payment rails.</h2>
+          </div>
+        </div>
+        <div class="rail-grid">
+          <article class="rail-card">
+            <h3>USDC</h3>
+            <p>Primary stablecoin rail for fast settlement, treasury movement, and payout certainty.</p>
+          </article>
+          <article class="rail-card">
+            <h3>CCTP</h3>
+            <p>Charge-free cross-chain USDC transfers across supported chains where settlement demands it.</p>
+          </article>
+          <article class="rail-card">
+            <h3>Circle Wallets</h3>
+            <p>Embedded wallet UX for business users and global recipients without blockchain friction.</p>
+          </article>
+          <article class="rail-card">
+            <h3>Circle Gateway</h3>
+            <p>Payment orchestration, routing, and treasury movement for complex cross-border workflows.</p>
+          </article>
+        </div>
+        <div class="stablefx-card">
+          <h3>Advanced FX routing</h3>
+          <p>StableFX-inspired settlement logic for AED, USDC, and destination currency routing with optimized payout economics.</p>
+        </div>
+      </section>
+
+      <section id="onchain" class="section section-onchain">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow">Live onchain</p>
+            <h2>Connect any Web3 wallet to Arc Testnet and send live transactions.</h2>
+          </div>
+        </div>
+        <div class="container arc-testnet-highlight">
+          <p>This prototype is live on <strong>Arc Testnet</strong>. Anyone can connect their wallet, and all transactions will be publicly viewable on the testnet. Transaction fees are collected through a transparent public address for demonstration purposes.</p>
+        </div>
+        <div class="onchain-grid">
+          <div class="onchain-card">
+            <h3>Arc Testnet network</h3>
+            <p>Your wallet will automatically add or switch to Arc Testnet. All transactions are publicly recorded on testnet.</p>
+            <div class="network-card">
+              <div><span class="label">Network</span><strong>Arc Testnet</strong></div>
+              <div><span class="label">RPC URL</span><strong>https://rpc.testnet.arc.network</strong></div>
+              <div><span class="label">Chain ID</span><strong>5042002</strong></div>
+              <div><span class="label">Currency</span><strong>USDC</strong></div>
+              <div><span class="label">Explorer</span><strong><a href="https://testnet.arcscan.app" target="_blank" rel="noreferrer noopener">ArcScan Testnet</a></strong></div>
+            </div>
+            <div class="wallet-info">
+              <div><span class="label">Account</span><strong id="wallet-address">Not connected</strong></div>
+              <div><span class="label">Network</span><strong id="wallet-network">N/A</strong></div>
+              <div><span class="label">Balance</span><strong id="wallet-balance">N/A</strong></div>
+            </div>
+          </div>
+          <div class="onchain-card">
+            <h3>Send a public testnet transaction</h3>
+            <p>By default, your transaction goes to the public fee collector address. You can change the recipient or test the settlement model.</p>
+            <label class="field-label">Recipient address
+              <input id="tx-recipient" type="text" />
+            </label>
+            <label class="field-label">Amount (in native USDC)
+              <input id="tx-amount" type="text" placeholder="0.001" />
+            </label>
+            <button class="button button-primary" id="send-tx">Send public transaction</button>
+            <div class="status-log"><pre id="onchain-status">Ready to connect.</pre></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p>ARC L1 payment prototype for UAE → global settlement.</p>
+          <p>Explore transparent fees, stablecoin rails, and live wallet interactions.</p>
+        </div>
+        <a class="footer-link" href="https://docs.arc.network/ai/mcp" target="_blank" rel="noreferrer noopener">ARC MCP docs</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.9.0/dist/ethers.min.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
