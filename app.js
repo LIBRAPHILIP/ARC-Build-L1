@@ -118,7 +118,7 @@ async function ensureArcTestnet() {
 
 async function connectWallet() {
   if (!window.ethereum) {
-    updateStatus('No injected wallet found. Install MetaMask or Circle Wallet to connect.');
+    updateStatus('No injected wallet found. Install MetaMask, OKX Wallet, or another Web3 wallet to connect.');
     return;
   }
 
